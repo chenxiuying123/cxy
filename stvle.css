@@ -1,0 +1,105 @@
+/* 重置浏览器默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 设置字体和背景颜色 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* 蓝绿色背景 */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 容器样式 */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 页眉样式 */
+header {
+    background-color: #00796b; /* 深蓝绿色 */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* 每个模块的样式 */
+.section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #d3e0ea;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    color: #00796b;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.section p {
+    font-size: 1rem;
+}
+
+.section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.section ul li {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+/* 联系方式样式 */
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.contact-info a {
+    color: #00796b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info p {
+        margin-bottom: 10px;
+    }
+}
